@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      calc
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+      <form class="myInputRow">
+          <ion-item>
+              <ion-input type="text" placeholder="0" name="display" [(ngModel)]="result"></ion-input>
+          </ion-item>
+      </form>
+
+    <div class="row">
+      <ion-button class="col2" color="danger" size="large" (click)="btnClicked('C')">C</ion-button>
+      <ion-button class="col" color="warning" size="large" (click)="btnClicked('%')">%</ion-button>
+      <ion-button class="col" color="warning" size="large" (click)="btnClicked('/')">/</ion-button>
+    </div>
+
+    <div class="row">
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('7')">7</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('8')">8</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('9')">9</ion-button>
+      <ion-button class="col" color="warning" size="large" (click)="btnClicked('*')">*</ion-button>
+    </div>
+
+    <div class="row">
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('4')">4</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('5')">5</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('6')">6</ion-button>
+      <ion-button class="col" color="warning" size="large" (click)="btnClicked('-')">-</ion-button>
+    </div>
+
+    <div class="row">
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('1')">1</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('2')">2</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('3')">3</ion-button>
+      <ion-button class="col" color="warning" size="large" (click)="btnClicked('+')">+</ion-button>
+    </div>
+
+    <div class="row">
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('0')">0</ion-button>
+      <ion-button class="col" color="primary" size="large" (click)="btnClicked('.')">.</ion-button>
+      <ion-button class="col2" color="danger" size="large" (click)="btnClicked('=')">=</ion-button>
+    </div>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+
+

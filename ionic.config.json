@@ -1,0 +1,8 @@
+{
+  "name": "calc",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
